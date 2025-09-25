@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lunatrium — AI Video Wizard for Creators</title>
+  <meta name="description" content="Lunatrium turns ideas into scroll-stopping videos in seconds. Built for creators, pros, and agencies.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">🜁</div>
+        <span class="brand-name">Lunatrium</span>
+      </div>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#demo" class="btn btn-ghost">Try Demo</a>
+        <button id="open-ceo" class="btn btn-outline">CEO Access</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Turn ideas into scroll‑stopping videos in seconds.</h1>
+        <p class="sub">Meet <strong>Lunatrium</strong>, your AI video wizard. Create viral clips, trailers, and ads that convert — without editing headaches.</p>
+        <div class="hero-cta">
+          <a href="#pricing" class="btn btn-primary">Start creating now</a>
+          <a href="#demo" class="btn btn-ghost">Watch it work</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>40,000+</strong><span>videos rendered</span></div>
+          <div><strong>8.9/10</strong><span>average rating</span></div>
+          <div><strong>12x</strong><span>faster to publish</span></div>
+        </div>
+        <div class="hero-preview">
+          <div class="preview-frame">
+            <div class="preview-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+            <div class="preview-body">
+              <div class="preview-grid">
+                <div class="card">Auto captions</div>
+                <div class="card">Smart cuts</div>
+                <div class="card">Trend templates</div>
+                <div class="card">Brand kit</div>
+                <div class="card">Music sync</div>
+                <div class="card">1‑click resize</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2>Everything you need to ship videos that sell</h2>
+        <div class="feature-grid">
+          <div class="feature">
+            <h3>Write. Paste. Win.</h3>
+            <p>Drop a script or URL. Lunatrium pulls scenes, voice, captions, and hooks that keep thumbs from scrolling.</p>
+          </div>
+          <div class="feature">
+            <h3>Templates that trend</h3>
+            <p>Start from proven frameworks like AIDA, PAS, and UGC reviews — tested to convert across TikTok, Reels, and Shorts.</p>
+          </div>
+          <div class="feature">
+            <h3>Brand in a click</h3>
+            <p>Lock logos, colors, fonts, and lower‑thirds. Stay on‑brand at scale for every client and channel.</p>
+          </div>
+          <div class="feature">
+            <h3>Export everywhere</h3>
+            <p>9:16, 1:1, 16:9, 4:5 — resize without re‑editing. Crisp renders optimized for every platform.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <h2>Simple plans that scale with you</h2>
+        <div class="pricing-grid">
+          <div class="price-card">
+            <div class="badge">Creator</div>
+            <h3>€9.99<span>/mo</span></h3>
+            <ul>
+              <li>Basics to launch</li>
+              <li>40 renders / month</li>
+              <li>Core templates</li>
+              <li>Auto captions</li>
+            </ul>
+            <a href="#demo" class="btn btn-primary">Start Creator</a>
+          </div>
+          <div class="price-card featured">
+            <div class="badge">Pro</div>
+            <h3>€19.99<span>/mo</span></h3>
+            <ul>
+              <li>All Creator features</li>
+              <li>Unlimited drafts</li>
+              <li>Brand kit & presets</li>
+              <li>Priority renders</li>
+            </ul>
+            <a href="#demo" class="btn btn-primary">Go Pro</a>
+          </div>
+          <div class="price-card">
+            <div class="badge">Agency</div>
+            <h3>€50<span>/mo</span></h3>
+            <ul>
+              <li>Team seats (5)</li>
+              <li>Client workspaces</li>
+              <li>Shared brand kits</li>
+              <li>White‑label exports</li>
+            </ul>
+            <a href="#demo" class="btn btn-primary">Scale with Agency</a>
+          </div>
+        </div>
+        <p class="fineprint">No contracts. Cancel anytime. Prices in Euros.</p>
+      </div>
+    </section>
+
+    <section id="demo" class="demo">
+      <div class="container">
+        <h2>See Lunatrium in action</h2>
+        <p class="sub">Paste a URL or a short script. We’ll mock a sample so you can feel the flow.</p>
+        <form id="demo-form" class="demo-form">
+          <input type="text" id="demo-input" placeholder="Paste a URL or write a prompt..." aria-label="Input URL or prompt">
+          <button type="submit" class="btn btn-primary">Generate</button>
+        </form>
+        <div id="demo-output" class="demo-output" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="quotes">
+          <blockquote>“First video went viral in 48 hours. Lunatrium paid for itself day one.” <span>— Eliza, UGC Creator</span></blockquote>
+          <blockquote>“Turned our blog posts into a month of content in an afternoon.” <span>— Mark, SaaS Founder</span></blockquote>
+          <blockquote>“Clients think we hired a full‑time editor. It’s our secret weapon.” <span>— Dana, Agency Owner</span></blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand">
+        <div class="logo">🜁</div>
+        <span class="brand-name">Lunatrium</span>
+      </div>
+      <div class="foot-links">
+        <a href="#pricing">Pricing</a>
+        <a href="#features">Features</a>
+        <a href="#demo">Demo</a>
+      </div>
+      <div class="foot-copy">© <span id="year"></span> Lunatrium. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <div id="ceo-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="ceo-title">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog">
+      <button class="modal-close" aria-label="Close" data-close>×</button>
+      <h3 id="ceo-title">CEO Access</h3>
+      <p class="sub">Enter passcode to open console.</p>
+      <form id="ceo-form" class="ceo-form">
+        <input type="password" id="ceo-pass" placeholder="Passcode" autocomplete="off">
+        <button type="submit" class="btn btn-primary">Unlock</button>
+      </form>
+      <div id="ceo-console" class="ceo-console" hidden>
+        <div class="console-grid">
+          <div class="console-card">
+            <h4>Toggle Features</h4>
+            <label><input type="checkbox" data-flag="captions" checked> Auto captions</label>
+            <label><input type="checkbox" data-flag="smartcuts" checked> Smart cuts</label>
+            <label><input type="checkbox" data-flag="templates" checked> Trend templates</label>
+          </div>
+          <div class="console-card">
+            <h4>Set Default Plan</h4>
+            <select id="default-plan">
+              <option>Creator €9.99</option>
+              <option selected>Pro €19.99</option>
+              <option>Agency €50</option>
+            </select>
+            <button id="save-config" class="btn btn-outline" type="button">Save</button>
+          </div>
+          <div class="console-card">
+            <h4>System</h4>
+            <div class="kv"><span>Status</span><strong id="sys-status">OK</strong></div>
+            <div class="kv"><span>Build</span><strong id="sys-build">static‑alpha</strong></div>
+          </div>
+        </div>
+      </div>
+      <p id="ceo-hint" class="hint">Hint: default passcode is 2047</p>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
