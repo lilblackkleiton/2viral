@@ -1,3 +1,17 @@
 [build]
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/styles.css"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/app.js"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[build]
   command = "npm run build"
   publish = ".next"
